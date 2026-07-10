@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/contact")
-@CrossOrigin(origins = "https://dunova-systems-sage.vercel.app")
+@CrossOrigin(origins = "https://dunova-systems-sage.vercel.app","https://dunova-systems-c8yf4pncg-shivansh7a8s-projects.vercel.app")
 public class ContactController {
 
     @Autowired
