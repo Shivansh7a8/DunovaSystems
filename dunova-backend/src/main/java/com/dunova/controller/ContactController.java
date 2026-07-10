@@ -35,7 +35,7 @@ public ResponseEntity<String> sendMail(@RequestBody ContactRequest request) {
 public String dnsTest() {
 
     try {
-        InetAddress address = InetAddress.getByName("smtp.gmail.com");
+        InetAddress address = InetAddress.getByName("smtp-relay.brevo.com");
         return address.getHostAddress();
     } catch (Exception e) {
         return e.toString();
@@ -49,7 +49,7 @@ public String smtpTest() {
     try (Socket socket = new Socket()) {
 
         socket.connect(
-                new InetSocketAddress("smtp.gmail.com", 587),
+                new InetSocketAddress("smtp-relay.brevo.com", 587),
                 5000
         );
 
@@ -61,21 +61,5 @@ public String smtpTest() {
 
     }
 
-}
-    @GetMapping("/internet-test")
-public String internetTest() {
-    try {
-        URL url = new URL("https://www.google.com");
-        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        conn.setConnectTimeout(5000);
-        conn.connect();
-        return "Response: " + conn.getResponseCode();
-    } catch (Exception e) {
-        return e.toString();
-    }
-}
-    @GetMapping("/dns")
-public String dns() throws Exception {
-    return InetAddress.getByName("smtp-relay.brevo.com").getHostAddress();
 }
 }
