@@ -31,7 +31,7 @@ export class ContactPage {
   popupMessage = '';
 
   // Change this when deployed
-  api = "/api/contact";
+  api = "https://dunovasystems.onrender.com/api/contact";
 
   constructor(
     private fb: FormBuilder,
