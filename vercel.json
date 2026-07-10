@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd website && ng build",
+  "buildCommand": "cd website ; ng build",
   "outputDirectory": "dist/website/browser",
   "framework": "angular",
   "installCommand": "npm install"
