@@ -19,7 +19,7 @@ public class EmailService {
         // Mail to Admin
         SimpleMailMessage admin = new SimpleMailMessage();
 
-        admin.setTo("help@theduneproductions.com");
+        admin.setTo("shuklashivansh3998@gmail.com");
 
         admin.setSubject("New Contact Form");
 
