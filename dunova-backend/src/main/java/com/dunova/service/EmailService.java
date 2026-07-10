@@ -18,12 +18,16 @@ public class EmailService {
     @Value("${spring.mail.username}")
     private String adminEmail;
 
+    @Value("${contact.admin.email}")
+    private String adminEmail;
+
     public void sendEmail(ContactRequest request){
 
         // Mail to Admin
         SimpleMailMessage admin = new SimpleMailMessage();
 
         //admin.setTo("shuklashivansh3998@gmail.com");
+        admin.setFrom(fromEmail);
         admin.setTo(adminEmail);
 
         admin.setSubject("New Contact Form");
