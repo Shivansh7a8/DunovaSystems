@@ -1,0 +1,683 @@
+/* ==========================================
+   GOOGLE FONTS
+========================================== */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap'); */
+
+:host{
+    display:block;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.work-page{
+
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top ,#1d3528 0%,transparent 30%),
+    radial-gradient(circle at bottom ,#0e2d20 0%,transparent 40%),
+    #050806;
+    color:#fff;
+
+    font-family:'Sora',sans-serif;
+
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    padding:90px 0 80px;
+
+}
+
+.container{
+
+    width:min(1180px,92%);
+
+    margin:auto;
+
+}
+
+.tag{
+
+    display:inline-block;
+
+    color:#c6a22d;
+
+    font-size:11px;
+
+    letter-spacing:5px;
+
+    margin-bottom:22px;
+
+}
+
+.hero h1{
+
+    font-family:'Michroma',sans-serif;
+
+    font-size:50px;
+
+    line-height:.95;
+
+    font-weight:500;
+
+    letter-spacing:2px;
+
+    margin-bottom:28px;
+
+}
+
+.hero p{
+
+    max-width:470px;
+
+    color:#9A9078;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+}
+
+/* ================= CASES ================= */
+
+.cases{
+
+    padding:70px 0 90px;
+    background:#09100d;
+
+}
+
+.case-card{
+
+    background:#14231b;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:18px;
+
+    padding:36px;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:60px;
+
+    margin-bottom:28px;
+
+    transition:.35s;
+
+}
+
+.case-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 50px rgba(0,0,0,.45);
+
+}
+
+.labels{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-bottom:24px;
+
+}
+
+.labels span{
+
+    border:1px solid #275646;
+
+    color:#75c5a0;
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    font-size:11px;
+
+    letter-spacing:1px;
+
+}
+
+.left h2{
+
+    font-family:'Michroma',sans-serif;
+
+    font-size:28px;
+
+    line-height:1.15;
+
+    font-weight:500;
+
+    margin-bottom:22px;
+
+}
+
+.left p{
+
+    color:#9A9078;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+    font-size:15px;
+
+}
+
+.right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:45px;
+
+}
+
+.metric h3{
+
+    color:#d7b53b;
+
+    font-size:40px;
+
+    font-family:'Michroma',sans-serif;
+
+    margin-bottom:10px;
+
+}
+
+.metric span{
+
+    color:#bdbdbd;
+
+    line-height:1.7;
+
+    font-size:14px;
+
+}
+
+.note{
+
+    margin-top:20px;
+
+    color:#777;
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+}
+
+/* ================= CTA ================= */
+
+.cta{
+
+    padding:110px 0;
+
+    text-align:center;
+
+}
+
+.cta h2{
+
+    font-family:'Michroma',sans-serif;
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#bcbcbc;
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+
+.cta button{
+
+    margin-top:45px;
+
+    width:180px;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#d6ad2f;
+
+    color:#111;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+    margin-left: 500px;
+
+}
+
+.cta button:hover{
+
+    background:#f2c844;
+
+    transform:translateY(-3px);
+
+}
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+/* ---------- Large Laptop ---------- */
+
+@media (max-width:1200px){
+
+.container{
+
+    width:92%;
+
+}
+
+.hero h1{
+
+    font-size:62px;
+
+}
+
+.left h2{
+
+    font-size:30px;
+
+}
+
+.metric h3{
+
+    font-size:38px;
+
+}
+
+}
+
+
+/* ---------- Laptop ---------- */
+
+@media (max-width:992px){
+
+.hero{
+
+    padding:70px 0;
+
+}
+
+.hero h1{
+
+    font-size:54px;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.case-card{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+}
+
+.right{
+
+    flex-direction:row;
+
+    justify-content:space-between;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+    padding-top:30px;
+
+}
+
+.cta{
+
+    padding:90px 0;
+
+}
+
+.cta h2{
+
+    font-size:44px;
+
+}
+
+}
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:768px){
+
+.hero{
+
+    padding:60px 0;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+.case-card{
+
+    padding:28px;
+
+}
+
+.left h2{
+
+    font-size:28px;
+
+}
+
+.left p{
+
+    font-size:15px;
+
+}
+
+.metric h3{
+
+    font-size:32px;
+
+}
+
+.cta{
+
+    padding:70px 0;
+
+}
+
+.cta h2{
+
+    font-size:36px;
+
+}
+
+.cta p{
+
+    font-size:16px;
+
+}
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:576px){
+
+.hero{
+
+    padding:50px 0;
+
+}
+
+.hero h1{
+
+    font-size:32px;
+
+    letter-spacing:1px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.labels{
+
+    flex-wrap:wrap;
+
+}
+
+.labels span{
+
+    font-size:10px;
+
+}
+
+.case-card{
+
+    padding:22px;
+
+}
+
+.left h2{
+
+    font-size:22px;
+
+}
+
+.left p{
+
+    font-size:14px;
+
+}
+
+.right{
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.metric h3{
+
+    font-size:28px;
+
+}
+
+.metric span{
+
+    font-size:13px;
+
+}
+
+.note{
+
+    font-size:10px;
+
+    letter-spacing:2px;
+
+}
+
+.cta{
+
+    padding:60px 0;
+
+}
+
+.cta h2{
+
+    font-size:30px;
+
+}
+
+.cta p{
+
+    font-size:15px;
+
+}
+
+.cta button{
+
+    width:100%;
+
+    max-width:250px;
+
+    margin:auto;
+
+    margin-top:35px;
+
+}
+
+}
+
+
+/* ---------- Small Phones ---------- */
+
+@media (max-width:420px){
+
+.hero h1{
+
+    font-size:26px;
+
+}
+
+.tag{
+
+    font-size:10px;
+
+}
+
+.case-card{
+
+    padding:18px;
+
+    border-radius:14px;
+
+}
+
+.left h2{
+
+    font-size:20px;
+
+}
+
+.left p{
+
+    font-size:13px;
+
+}
+
+.metric h3{
+
+    font-size:24px;
+
+}
+
+.metric span{
+
+    font-size:12px;
+
+}
+
+.cta h2{
+
+    font-size:24px;
+
+}
+
+.cta p{
+
+    font-size:14px;
+
+}
+
+.cta button{
+
+    height:50px;
+
+    font-size:14px;
+
+}
+
+}
+
+
+/* ---------- Extra Small ---------- */
+
+@media (max-width:360px){
+
+.hero h1{
+
+    font-size:22px;
+
+}
+
+.left h2{
+
+    font-size:18px;
+
+}
+
+.case-card{
+
+    padding:16px;
+
+}
+
+.metric h3{
+
+    font-size:22px;
+
+}
+
+.cta h2{
+
+    font-size:20px;
+
+}
+
+}

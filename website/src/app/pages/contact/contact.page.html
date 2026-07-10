@@ -1,0 +1,195 @@
+<section class="contact-page">
+
+  <!-- Hero -->
+  <section class="contact-hero">
+
+    <div class="container">
+
+      <!-- Left -->
+      <div class="contact-left">
+
+        <span class="section-tag">
+          CONTACT
+        </span>
+
+        <h1>
+          START THE<br>
+          CONVERSATION
+        </h1>
+
+        <p>
+          Tell us about your workflows.
+          A 30-minute call is enough to
+          find your first high-impact AI
+          opportunity.
+        </p>
+
+        <div class="contact-info">
+
+          <div class="info">
+
+            <div class="icon">
+              <img src="assets/mail.png" alt="Email">
+              <i class="bi bi-envelope"></i>
+            </div>
+
+            <span>
+              help&#64;theduneproductions.com
+            </span>
+
+          </div>
+
+          <div class="info">
+
+            <div class="icon">
+              <img src="assets/call.png" alt="Phone">
+              <i class="bi bi-telephone"></i>
+            </div>
+
+            <span>
+              +91 8867666034
+            </span>
+
+          </div>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="steps">
+
+          <span class="step-title">
+            WHAT HAPPENS NEXT
+          </span>
+
+          <div class="step">
+
+            <span class="number">01</span>
+
+            <span>
+              We reply within one business day.
+            </span>
+
+          </div>
+
+          <div class="step">
+
+            <span class="number">02</span>
+
+            <span>
+              A 30-minute scoping call to map your workflows.
+            </span>
+
+          </div>
+
+          <div class="step">
+
+            <span class="number">03</span>
+
+            <span>
+              A concrete proposal — first automation,
+              timeline and cost.
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right -->
+      <div class="contact-card">
+
+        <form
+          [formGroup]="contactForm" (ngSubmit)="submit()">
+
+            <div class="field">
+
+              <label>Name</label>
+
+              <input
+                type="text"
+                formControlName="name"
+                placeholder="Your name">
+
+            </div>
+
+          <div class="field">
+
+            <label>Company/Business Name</label>
+
+            <input
+              type="text"
+              formControlName="company"
+              placeholder="Company name">
+
+          </div>
+          <div class="field">
+
+              <label>Company/Business email</label>
+
+              <input
+                type="email"
+                formControlName="email"
+                placeholder="you@company.com">
+
+            </div>
+
+          <div class="field">
+
+            <label>
+              What should AI take off your plate?
+            </label>
+
+            <textarea
+              rows="6"
+              formControlName="message"
+              placeholder="Describe the workflow, the systems involved, and where the manual effort lives."></textarea>
+
+          </div>
+
+          <button
+          type="submit"
+          [disabled]="contactForm.invalid">
+          <!-- {{ loading ? 'Sending...' : 'Send Message' }} -->
+            Send Message
+            <i class="bi bi-arrow-right"></i>
+
+          </button>
+
+          <div class="response">
+            RESPONSE → WITHIN ONE BUSINESS DAY
+          </div>
+
+        </form>
+        <!-- Success Popup -->
+
+<div class="popup-overlay" *ngIf="showSuccessPopup">
+
+    <div class="popup">
+
+        <div class="check-circle">
+
+            ✔
+
+        </div>
+
+        <h2>{{popupTitle}}</h2>
+
+        <p>
+
+            {{popupMessage}}
+
+        </p>
+
+    </div>
+
+</div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</section>

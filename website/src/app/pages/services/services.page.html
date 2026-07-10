@@ -1,0 +1,212 @@
+<section class="hero">
+
+    <div class="container">
+
+        <span class="eyebrow">
+            SERVICES
+        </span>
+
+        <h1>
+            EVERYTHING AN AI<br>
+            WORKFORCE NEEDS
+        </h1>
+
+        <p>
+            From strategy to production to ongoing operations —
+            twelve services, three ways to engage.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="service-section">
+
+<div class="container">
+
+<div class="service-layout">
+
+<div class="left">
+
+<span class="number">01</span>
+
+<h2>BUILD</h2>
+
+<p>
+
+Production-grade AI systems,
+designed and shipped for your workflows.
+
+</p>
+
+</div>
+
+<div class="right">
+
+<div
+class="card"
+*ngFor="let item of buildServices">
+
+<div class="icon">
+    <img [src]="item.icon"/>
+    <i class="bi" [ngClass]="item.icon"></i>
+</div>
+
+<h3>
+
+{{item.title}}
+
+</h3>
+
+<p>
+
+{{item.description}}
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =========================
+02 Integrate & Run
+========================== -->
+
+<section class="service-section alt">
+
+    <div class="container">
+
+        <div class="service-layout">
+
+            <div class="left">
+
+                <span class="number">02</span>
+
+                <h2>INTEGRATE & RUN</h2>
+
+                <p>
+
+                    AI that fits your existing stack
+                    and keeps working after launch.
+
+                </p>
+
+            </div>
+
+            <div class="right">
+
+                <div
+                    class="card"
+                    *ngFor="let item of integrateServices">
+
+                    <div class="icon">
+                        <img [src]="item.icon"/>
+
+                        <i class="bi" [ngClass]="item.icon"></i>
+
+                    </div>
+
+                    <h3>{{item.title}}</h3>
+
+                    <p>{{item.description}}</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+03 Advise & Enable
+========================== -->
+
+<section class="service-section">
+
+    <div class="container">
+
+        <div class="service-layout">
+
+            <div class="left">
+
+                <span class="number">03</span>
+
+                <h2>ADVISE & ENABLE</h2>
+
+                <p>
+
+                    The strategy and skills
+                    to make AI stick
+                    inside your organization.
+
+                </p>
+
+            </div>
+
+            <div class="right">
+
+                <div
+                    class="card"
+                    *ngFor="let item of adviseServices">
+
+                    <div class="icon">
+                        <img [src]="item.icon"/>
+                        <i class="bi" [ngClass]="item.icon"></i>
+
+                    </div>
+
+                    <h3>{{item.title}}</h3>
+
+                    <p>{{item.description}}</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+CTA
+========================== -->
+
+<section class="service-cta">
+
+    <div class="container">
+
+        <h2>
+
+            NOT SURE WHERE TO START?
+
+        </h2>
+
+        <p>
+
+            A 30-minute scoping call is enough to find
+            your first high-impact automation.
+
+        </p>
+
+        <button routerLink="/contact" routerLinkActive="Active" class="btn btn-primary">
+
+            Book a call
+
+            <i class="bi bi-arrow-right"></i>
+
+        </button>
+
+    </div>
+
+</section>
