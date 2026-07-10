@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Value;
 
 
 @Service
@@ -14,12 +15,16 @@ public class EmailService {
     @Autowired
     JavaMailSender sender;
 
+    @Value("${spring.mail.username}")
+    private String adminEmail;
+
     public void sendEmail(ContactRequest request){
 
         // Mail to Admin
         SimpleMailMessage admin = new SimpleMailMessage();
 
-        admin.setTo("shuklashivansh3998@gmail.com");
+        //admin.setTo("shuklashivansh3998@gmail.com");
+        admin.setTo(adminEmail);
 
         admin.setSubject("New Contact Form");
 
