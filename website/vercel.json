@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://dunovasystems.onrender.com/api/$1"
+    }
+  ]
+}
