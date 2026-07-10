@@ -24,5 +24,24 @@ public ResponseEntity<String> sendMail(@RequestBody ContactRequest request) {
         return ResponseEntity.internalServerError().body(e.getMessage());
     }
 }
+    @GetMapping("/test")
+public String test() {
+
+    try (Socket socket = new Socket()) {
+
+        socket.connect(
+            new InetSocketAddress("smtp.gmail.com", 587),
+            5000
+        );
+
+        return "Connected";
+
+    } catch (Exception e) {
+
+        return e.toString();
+
+    }
+
+}
 
 }
