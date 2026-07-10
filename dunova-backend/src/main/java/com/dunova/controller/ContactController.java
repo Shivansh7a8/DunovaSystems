@@ -62,4 +62,20 @@ public String smtpTest() {
     }
 
 }
+    @GetMapping("/internet-test")
+public String internetTest() {
+    try {
+        URL url = new URL("https://www.google.com");
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setConnectTimeout(5000);
+        conn.connect();
+        return "Response: " + conn.getResponseCode();
+    } catch (Exception e) {
+        return e.toString();
+    }
+}
+    @GetMapping("/dns")
+public String dns() throws Exception {
+    return InetAddress.getByName("smtp-relay.brevo.com").getHostAddress();
+}
 }
