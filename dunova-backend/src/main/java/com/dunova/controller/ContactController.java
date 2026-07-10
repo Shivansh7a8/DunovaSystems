@@ -12,14 +12,17 @@ public class ContactController {
 
     @Autowired
     private EmailService emailService;
-
+    
     @PostMapping
-    public ResponseEntity<String> sendMail(@RequestBody ContactRequest request){
+public ResponseEntity<String> sendMail(@RequestBody ContactRequest request) {
 
+    try {
         emailService.sendEmail(request);
-
         return ResponseEntity.ok("Mail Sent Successfully");
-
+    } catch (Exception e) {
+        e.printStackTrace();
+        return ResponseEntity.internalServerError().body(e.getMessage());
     }
+}
 
 }
