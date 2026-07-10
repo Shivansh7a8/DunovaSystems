@@ -107,7 +107,7 @@ submit() {
 
   // Send request in the background
   this.http.post(
-    'http://localhost:8080/api/contact',formData,
+    'https://dunovasystems.onrender.com/api/contact',formData,
     { responseType: 'text' }
   ).subscribe({
 
