@@ -31,7 +31,7 @@ export class ContactPage {
   popupMessage = '';
 
   // Change this when deployed
-  api = "https://dunovasystems.onrender.com/api/contact";
+  api = "/api/contact";
 
   constructor(
     private fb: FormBuilder,
@@ -107,7 +107,7 @@ submit() {
 
   // Send request in the background
   this.http.post(
-    'https://dunovasystems.onrender.com/api/contact',formData,
+    this.api,formData,
     { responseType: 'text' }
   ).subscribe({
 
