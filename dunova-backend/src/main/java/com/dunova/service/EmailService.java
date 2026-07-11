@@ -16,9 +16,6 @@ public class EmailService {
     JavaMailSender sender;
 
     @Value("${spring.mail.username}")
-    private String fromEmail;
-
-    @Value("${contact.admin.email}")
     private String adminEmail;
 
     public void sendEmail(ContactRequest request){
@@ -27,7 +24,6 @@ public class EmailService {
         SimpleMailMessage admin = new SimpleMailMessage();
 
         //admin.setTo("shuklashivansh3998@gmail.com");
-        admin.setFrom(fromEmail);
         admin.setTo(adminEmail);
 
         admin.setSubject("New Contact Form");
