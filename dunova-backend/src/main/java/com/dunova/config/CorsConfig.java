@@ -19,7 +19,8 @@ public class CorsConfig {
                         .allowedOrigins(
                                 "http://localhost:4200",
                                 "https://dunova-systems-sage.vercel.app",
-                                "https://dunova-systems-c8yf4pncg-shivansh7a8s-projects.vercel.app")
+                                "https://dunova-systems-c8yf4pncg-shivansh7a8s-projects.vercel.app",
+                            "https://cblktyelcbjsysnjvxei.supabase.co")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(false);
