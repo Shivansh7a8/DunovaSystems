@@ -32,7 +32,7 @@ export class ContactPage {
 
   // Change this when deployed
   // api = "https://dunovas.onrender.com/api/contact";
-  api="https://cblktyelcbjsysnjvxei.supabase.co/api/contact";
+  api="https://gjvglbeikxxfcokgqnkq.supabase.co/functions/v1/contact-form";
 
   constructor(
     private fb: FormBuilder,
